@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <title>ADO – Artisthemsida</title>
+</head>
+<body>
+    
+  <!-- Dropdown menu -->
+  <header class="banner-header">
+    <div class="dropdown" style="float:right;">
+      <button class="dropbtn">Meny</button>
+      <div class="dropdown-content">
+        <a href="index.html">Startsida</a>
+        <a href="disc1.html">Ado's Best Adobum</a>
+        <a href="disc2.html">Zanmu</a>
+        <a href="request.html">Request a Song</a>
+        <a href="register.html">Register</a>
+        <!-- Login-button -->
+        <button id="loginBtn" class="login-link">Logga in</button>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+      
+          <!-- Flik-knappar -->
+          <div class="tabs">
+            <button class="tablink active" data-tab="loginTab">Logga in</button>
+            <button class="tablink" data-tab="registerTab">Registrera</button>
+          </div>
+      
+          <!-- Login-flik -->
+          <div id="loginTab" class="tabcontent active">
+            <h2>Logga in</h2>
+            <form id="loginForm">
+              <label for="username">Användarnamn:</label>
+              <input type="text" id="username" name="username" required>
+      
+              <label for="password">Lösenord:</label>
+              <input type="password" id="password" name="password" required>
+      
+              <button type="submit">Logga in</button>
+            </form>
+          </div>
+      
+          <!-- Registrera-flik -->
+          <div id="registerTab" class="tabcontent">
+            <h2>Registrera</h2>
+            <form id="registerForm">
+              <label for="newUsername">Användarnamn:</label>
+              <input type="text" id="newUsername" name="username" required>
+      
+              <label for="newPassword">Lösenord:</label>
+              <input type="password" id="newPassword" name="password" required>
+      
+              <button type="submit">Registrera</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <img src="./img/Ado_5th_5000x2000_banner.webp" alt="Ado – 5th Anniversary Banner" class="banner-img">
+    
+  </header>
+  
+  <section>
+    <h2>Om ADO</h2>
+    <p>
+        Ado (アド), född den 24 oktober 2002 i Tokyo, är en japansk sångerska känd för sin kraftfulla och unika röst. Hon slog igenom 2020 med debutsingeln ”Usseewa” (うっせぇわ), som snabbt blev en viral succé och placerade henne bland Japans mest populära unga artister.
+    </p>
+    <h3>Karriär och stil</h3>
+    <p>Ado är känd för sitt dynamiska röstomfång och sitt uttrycksfulla framförande, där hon blandar aggressiv energi med känslosam intensitet. Hon samarbetar ofta med olika låtskrivare och producenter inom Vocaloid- och J-pop-scenen, vilket ger varje låt en unik prägel.
+    <br><br>
+    Hon har medverkat i flera stora projekt, bland annat som sångrösten till Uta i One Piece Film: Red (2022), vilket stärkte hennes internationella genombrott.
+    </p>
+    <h3>Viktiga låtar</h3>
+    <p>
+        Några av hennes mest kända låtar är:
+        <ul>
+            <em>Usseewa</em> – genombrottshiten som blev ett fenomen på sociala medier
+            <br>
+            <em>Gira Gira</em> – en dramatisk låt med stark visuell identitet
+            <br>
+            <em>New Genesis (新時代)</em> – ledmotivet till One Piece Film: Red
+            <br>
+            <em>I'm Invincible (私は最強)</em> – också från One Piece Film: Red
+            <br>
+            <em>Show och Ibara</em> – exempel på hennes senare hits
+        </ul>
+    </p>
+    <h2>Diskografi</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Album</th>
+      <th>År</th>
+      <th>Antal låtar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ado's Best Adobum</td>
+      <td>2022</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Zanmu</td>
+      <td>2023</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Popularitet</h3>
+    <p>Trots sin unga ålder har Ado redan etablerat sig som en av de mest framstående artisterna i den moderna japanska musikscenen. Hennes låtar toppar regelbundet listor, och hennes unika stil har gjort henne till en förebild för en ny generation lyssnare både i Japan och internationellt.
+    </p>
+  </section>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+    background-color: #dddae2;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+  }
+  
+  .head1 {
+    font-size: 2em;
+    color: #0d4257;
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown-knapp */
+  .dropbtn {
+    background-color: #0d4257;
+    color: #dddae2;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* säkerställer att menyn alltid är ovanför */
+  }
+  
+  /* Menyn inuti */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #0d4257;
+    min-width: 180px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Länkarna i menyn */
+  .dropdown-content a {
+    color: #dddae2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover-effekter */
+  .dropdown-content a:hover {
+    background-color: #1b5f7a;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #1b5f7a;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  table, th, td {
+    border: 1px solid #0d4257;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0d4257;
+    color: #dddae2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  .banner-header {
+    position: relative; /* gör så att dropdownen kan positioneras relativt headern */
+    text-align: center;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Positionera dropdownen i övre högra hörnet av headern */
+  .banner-header .dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .dropdown-content button.login-link {
+    background: none;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button.login-link:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Modal bakgrund */
+  .modal {
+    display: none; /* dold från början */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Modal-rutan */
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Stäng-knappen */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  .tabs {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  
+  .tablink {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #eee;
+  }
+  
+  .tablink.active {
+    background: #ccc;
+    font-weight: bold;
+  }
+  
+  .tabcontent {
+    display: none;
+  }
+  
+  .tabcontent.active {
+    display: block;
+  }
+  
+  .tabcontent {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tabcontent.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
